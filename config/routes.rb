@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  get("/", { :controller => "boards", :action => "index" })
+
+  root to: "boards#index"
+  # this replaces line 6 (same thing) but for devise
+
+  # get("/", { :controller => "boards", :action => "index" })
 
   # Routes for the Post resource:
 
