@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
 
   root to: "boards#index"
   # this replaces line 6 (same thing) but for devise
